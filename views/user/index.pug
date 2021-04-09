@@ -12,10 +12,10 @@ html(lang="en")
               .logo.text-center
                 img(src='assets/img/mail_logo.png')
               p.lead Email to 
-            form.form-auth-small(action='/index')
+            form.form-auth-small(action='/index' method="POST")
               .form-group
-                label.control-label.sr-only(for='signin-email') Email
-                input#signin-email.form-control(type='email' value='' placeholder='Email')
+                label.control-label.sr-only(for='email') Email
+                input#signin-email.form-control(type='email' value='' placeholder='Email' name='email')
               .form-group.clearfix
               button.btn.btn-primary.btn-lg.btn-block(type='submit') Send 
         .clearfix
