@@ -12,15 +12,15 @@ html(lang="en")
               .logo.text-center
                 img(src='assets/img/mail_logo.png')
               p.lead Login Your email Account
-            form.form-auth-small(action='/index')
+            form.form-auth-small(action='/' method="POST")
               .form-group
-                label.control-label.sr-only(for='signin-email') Email
-                input#signin-email.form-control(type='email' value='' placeholder='Email')
+                label.control-label.sr-only(for='email') Email
+                input#signin-email.form-control(type='email' value='' placeholder='Email' name='email')
               .form-group
-                label.control-label.sr-only(for='signin-password') Password
-                input#signin-password.form-control(type='password' value='' placeholder='Password')
+                label.control-label.sr-only(for='password') Password
+                input#signin-password.form-control(type='password' value='' placeholder='Password' name='password')
               .form-group.clearfix
-              button.btn.btn-primary.btn-lg.btn-block(type='submit') LOGIN
+              button.btn.btn-primary.btn-lg.btn-block(type='submit' value='LOGIN') LOGIN
 
         .clearfix
 // END WRAPPER
