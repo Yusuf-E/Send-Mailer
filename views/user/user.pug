@@ -1,0 +1,21 @@
+<!doctype html>
+html(lang="en")
+  include ../includes/head.pug
+// WRAPPER
+#wrapper
+  .vertical-align-wrap
+    .vertical-align-middle
+      .auth-box
+        .left.text-center 
+          .content
+            .header
+              .logo.text-center
+                img(src='assets/img/mail.png')
+              p.lead Email to 
+            form.form-auth-small(action='/index')
+              .form-group
+                label.control-label.sr-only(for='signin-email') Email
+                input#signin-email.form-control(type='email' value='' placeholder='Email')
+              .form-group.clearfix
+              button.btn.btn-primary.btn-lg.btn-block(type='submit') Send 
+        .clearfix
